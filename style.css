@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url(uploads/Font/Quicksand/Quicksand-VariableFont_wght.ttf) format('truetype-variations');
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1800C9;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #c6c6c6;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px 20px 20px 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
+h2 {
+    color: #E71D73;
+    font-family: Quicksand, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+#displayPhrase {
+    color: #000000;
+    font-family: "Quicksand", Gadget, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#generateButton {
+  appearance: button;
+  background-color: #1800C9;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#generateButton:after {
+  background-clip: padding-box;
+  background-color: #1800C9;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#generateButton:main,
+#generateButton:focus {
+  user-select: auto;
+}
+
+#generateButton:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+#generateButton:disabled {
+  cursor: auto;
+}
+
+#generateButton:active {
+  border-width: 4px 0 0;
+  background: none;
+}
