@@ -24,6 +24,12 @@ const phrases = [
   
     // Display the random phrase
     document.getElementById('displayPhrase').textContent = randomPhrase;
+
+     // Clear the phrase after 5 minutes (300,000 milliseconds)
+  setTimeout(() => {
+    displayElement.textContent = '';
+  }, 300000); // 5 minutes in milliseconds
+  console.log('timer started');
   }
   
   // Add click event listener to the button
